@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    width:30rem;
+    margin: 66px;
+    padding:16px;
+    border:1px solid;
+    align-items: center;
+   justify-content: center;
+   border-radius:20px;
+   background-color: rgb(150, 143, 143);
+}
+.output{
+    border:1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    width:250px;
+    min-height:80px;
+    border:1px solid ;
+    border-radius:10px ;
+    text-align:right;
+    padding:2px;
+    background-color: rgb(152, 182, 182);
+    box-shadow:2px 3px 2px rgb(114, 112, 112);
+    font-size:20px;
+    overflow-y: auto;
+    
+    text-align: right;
+}
+.input{
+font-family:Raleway,sans-serif ;
+margin:auto;
+padding: 16px;
+font-size:16px;
+
+}
+
+.input button{
+    cursor: pointer;
+    gap:1rem 2rem;
+    padding: 16px;
+    margin: 6px;
+    width:50px;
+    background-color: blanchedalmond;
+    box-shadow:2px 3px 2px rgb(114, 112, 112);
+    color: rgb(20, 20, 20);
+    font-size:17px;
+    border-radius:8px;
+}
+
+button[id="kali"],button[id="min"],button[id="plus"],button[id="bagi"]{
+background-color: rgb(250, 234, 17);
+}
+
+button[id="jumlah"]{
+    background-color:rgb(219, 52, 52);
+}
+
+.foot{
+    
+    color: rgb(30, 30, 31);
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width:80%;
+    }
+    
+    .input button{
+        width:10px;
+        height:40px;
+        font-size: 16px;
+        
+        
+        padding:auto;
+    }
+}
